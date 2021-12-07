@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+
+}
+#container{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    padding: 90px;
+    background-color: #BDB5D5;
+    width: fit-content;
+}
+
+#inputs{
+    display: flex;
+}
+
+ h3{
+    text-align: center;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.options input, .options select{
+    display: block;
+    margin: 40px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-radius: 9px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.options{
+    text-align: center;
+}
+
+#submit{
+    padding-right: 20px;
+    padding-right: 20px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#type{
+    height: ;
+}
