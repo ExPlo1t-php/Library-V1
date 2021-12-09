@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-main{
-
+@font-face {
+    font-family: "lib";
+    src: url(Assets/Fonts/LibraryRecordsRegular-qZW66.ttf);
 }
+
 #container{
     display: block;
     margin: auto;
@@ -25,8 +27,20 @@ main{
  h3{
     text-align: center;
     height: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'lib', sans-serif;
     font-size: 40px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.44);
+}
+
+label p{
+    margin: 0;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+}
+label{
+    margin: 30px;
 }
 
 .options input, .options select{
@@ -34,7 +48,7 @@ main{
     margin: 40px;
     height: 40px;
     width: 400px;
-    border: none;
+    border: 1px solid;
     border-radius: 9px;
     padding: 8px;
     font-size: 15px;
@@ -48,12 +62,26 @@ main{
     padding-right: 20px;
     padding-right: 20px;
     padding: 5px;
-    display: block;
-    text-align: center;
-    display: flex;
-    align-items: center;
+    border: none;
 }
 
 #type{
-    height: ;
+    display: flex;
+    height: fit-content;
 }
+
+
+#type input{
+    width: fit-content;
+    -webkit-transform: scale(1.5);
+    height: 30px;
+    width: fit-content;
+    margin: 5px;
+    height: 30px;
+    margin: 0;
+    margin-left: 50px;
+}
+
+/* table, th, td{
+    border: solid 1px ;
+} */

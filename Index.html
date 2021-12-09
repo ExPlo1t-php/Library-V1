@@ -12,31 +12,72 @@
         <div id="container">
             <h3>Add A New Book</h3>
             <div id="inputs">
-        <div class="options">
-        <input type="text" placeholder="Enter The Title">
-        <input type="text" placeholder="Enter The Author">
-        <input type="text" placeholder="Enter The Price (In USD)">
+                <div class="options">
+                    <label id="title_input">
+                <input id="title" type="text" placeholder="Enter The Title">
+                <p id="title_par"></p>
+                    </label>
+
+                    <label id="author_input">
+                <input id="author" type="text" placeholder="Enter The Author">
+                <p id="author_par"></p>
+                    </label>
+
+                    <label id="price_input">
+                <input id="price" type="text" placeholder="Enter The Price (In USD)">
+                <p id="price_par"></p>
+                    </label>
+                </div>
+
+                <div class="options">
+                    <label id="date_input">
+                    <input type="date" id="date"> 
+                    <p id="date_par"></p>
+                    </label>
+                    
+                    <label id="type">
+                        <input type="radio"  value="Novel" name="select" id="novel">Novel
+                        <input type="radio"  value="Essay" name="select" id="essay">Essaay
+                        <input type="radio"  value="Comics" name="select" id="comics">Comics
+                        <p id="type_par"></p>
+                    </label>
+
+
+                    <label id="lang_input">
+                    <select name="Language" id="lang">
+                        <option value="sl">- select language -</option>
+                        <option value="English">English</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="French">French</option>
+                    </select>
+                    <p id="lang_par"></p>
+                    </label>
+                </div>
+        </div>
+        <button id="submit" onclick="checker()">Add To List</button>
         </div>
 
-        <div class="options">
-            <input type="date" id="date"> 
-            <section name="type" id="type" >
-                <input type="radio" id="Novel" value="Novel">
-                <input type="radio" id="Essay" value="Essay">
-                <input type="radio" id="Comics" value="Comics">
-            </section>
+        <!-- <div class="list">
+            <table>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>     
+                </table>
 
-            <select name="Language" id="lang">
-                <option value="sl">- select language -</option>
-                <option value="En">English</option>
-                <option value="Ar">Arabic</option>
-                <option value="Fr">French</option>
-            </select>
-        </div>
-        </div>
-        <button id="submit">ADD</button>
-        </div>
+        </div> -->
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
