@@ -1,12 +1,12 @@
-
+    var inputs = document.getElementsByTagName("input");
     var inTitle = document.getElementById("title");
     var inAuthor = document.getElementById("author");
     var inPrice = document.getElementById("price");
     var inDate = document.getElementById("date");
-    var inType = document.getElementById("type");
+    var inType = document.getElementsByClassName("type");
+    var inType0 = document.getElementById("type0");
     var inLang = document.getElementById("lang");
     var container = document.getElementById("container");
-    var inputs = document.getElementsByTagName("input");
     var min_length = 2;
     var max_length = 30;
     var is_checked = false;
@@ -20,11 +20,13 @@
 
     for (let i = 0; i < inputs.length; i++) {
 
-        if(inputs[i].value == "" || inputs.checked == false  ){
+        if(inputs[i].value == "" || inType.nextElementSibling.checked){
             not_valid++;
             inputs[i].style.borderColor = "red";
             inputs[i].nextElementSibling.style.color = "red";
             inputs[i].nextElementSibling.innerHTML = "please fill this field";
+            // inType.nextElementSibling.color = "red";
+            // inType.nextElementSibling.innerHTML = "please fill this field";
         }else{
             inputs[i].style.borderColor = "#4BCA81";
             inputs[i].nextElementSibling.style.color = "#4BCA81";
@@ -75,7 +77,7 @@ if(isNaN(inPrice.value)){
 
 // language check
 
-if(inLang.value == ""){
+if(inLang.value == "" || inLang.value == "sl"){
     not_valid++;
     inLang.style.borderColor = "red"
     inLang.nextElementSibling.innerHTML = "please choose a language.";
@@ -88,23 +90,27 @@ if(inLang.value == ""){
 }
 
 //type check
-    for (let j = 0; j < inType.length; j++) {
-        if(inType[j].checked){
-            is_checked = true;
+    for (let i = 0; i < inType.length; i++) {
+        if(inType[i].checked){
+            is_checked == true;
             break;
         }else{
-            is_checked = false;
+            is_checked == false;
         }
     }
 
     if (is_checked) {
-        inType.nextElementSibling.innerHTML = "done";
-        inType.nextElementSibling.color = "#4BCA81"
+        inType.innerHTML = "done";
+        inType.color = "#4BCA81"
     } else {
         not_valid++;
-        inType.innerHTML = "please select a type";
-        inType.style.color = red;
+        inType.color = "red";
+        inType.innerHTML = "donen't";
     }
+
+
+
+    console.log(inType);
 
 }
 
