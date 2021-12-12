@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "lib";
-    src: url(Assets/Fonts/LibraryRecordsRegular-qZW66.ttf);
+    src: url(Assets/Fonts/Uni\ Sans\ Thin\ Italic.otf);
 }
 
 #container{
@@ -16,12 +16,17 @@
     text-align: center;
     align-items: center;
     padding: 90px;
-    background-color: #BDB5D5;
+    background-color: #ad6a34;
     width: fit-content;
+    font-family: sans-serif;
 }
 
 #inputs{
     display: flex;
+}
+
+#inputs p{
+    font-weight: bold;    
 }
 
  h3{
@@ -37,21 +42,24 @@ label p{
     margin: 0;
     width: fit-content;
     display: flex;
-    position: absolute;
+    /* position: absolute; */
 }
 label{
-    margin: 30px;
+    margin-right: 30px;
 }
 
 .options input, .options select{
     display: block;
-    margin: 40px;
+    margin-top: 40px;
+    margin-right: 150px;
+    margin-bottom: 20px;
     height: 40px;
     width: 400px;
     border: 1px solid;
     border-radius: 9px;
     padding: 8px;
     font-size: 15px;
+    font-family: sans-serif;
 }
 
 .options{
@@ -67,21 +75,44 @@ label{
 
 #type{
     display: flex;
+}
+
+#type label input{
+    width: fit-content;
     height: fit-content;
-}
-
-
-#type input{
-    width: fit-content;
     -webkit-transform: scale(1.5);
-    height: 30px;
-    width: fit-content;
     margin: 5px;
-    height: 30px;
-    margin: 0;
-    margin-left: 50px;
+    margin-right: 10px;
 }
 
-/* table, th, td{
-    border: solid 1px ;
-} */
+#type label{
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.options p{
+    width: fit-content;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+
+.list{
+    text-align: center;
+    margin: auto;
+}
+
+table, th, td{
+    border: 1px solid;
+    align-items: center;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: auto;
+}
+

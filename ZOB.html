@@ -86,6 +86,7 @@
         
 
         function validate(e){
+
             e.preventDefault();
             var form_not_valid = 0;
 
@@ -157,6 +158,9 @@
                     is_checked = false;
                 }
             }
+
+
+            console.log(type.length);
             if(is_checked){
                 type_par.innerHTML = "ok!";
                 type_par.style.color = "green";
