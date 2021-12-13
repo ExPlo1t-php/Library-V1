@@ -9,16 +9,20 @@
     src: url(Assets/Fonts/Uni\ Sans\ Thin\ Italic.otf);
 }
 
+main{
+    background: url(assets/alfons-morales-YLSwjSy7stw-unsplash.jpg) no-repeat;
+}
+
 #container{
+    border-radius: 10px;
     display: block;
     margin: auto;
-    margin-top: 50px;
     text-align: center;
     align-items: center;
-    padding: 90px;
-    background-color: #ad6a34;
+    padding: 60px;
+    background-color: #dcbe87;
     width: fit-content;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #inputs{
@@ -32,7 +36,7 @@
  h3{
     text-align: center;
     height: fit-content;
-    font-family: 'lib', sans-serif;
+    font-family: "lib", sans-serif;
     font-size: 40px;
     color: #fff;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.44);
@@ -48,6 +52,10 @@ label{
     margin-right: 30px;
 }
 
+#input::after{
+    content: icon"fa-light fa-calendar-days";
+}
+
 .options input, .options select{
     display: block;
     margin-top: 40px;
@@ -59,7 +67,12 @@ label{
     border-radius: 9px;
     padding: 8px;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.options input:focus, .options select:focus{
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.44);
 }
 
 .options{
@@ -71,7 +84,20 @@ label{
     padding-right: 20px;
     padding: 5px;
     border: none;
+    background-color: #fff;
 }
+
+#submit:hover{
+    background-color: rgb(128, 128, 128);
+    opacity: 50%;
+    color: #fff;
+
+}
+
+.types:focus{
+    color: #000;
+}
+
 
 #type{
     display: flex;
@@ -104,15 +130,48 @@ label{
 
 
 .list{
+    border: none;
+    background-color: #dcbe87;
     text-align: center;
     margin: auto;
+    height: 500px;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-table, th, td{
-    border: 1px solid;
-    align-items: center;
+
+table{
+    width: 100%;
+}
+
+td.title, td.author{
+    width: 25%;
+}
+
+table th{
     border-collapse: collapse;
     padding: 15px;
     margin: auto;
+    font-weight: 500;
+    background-color: #a087dc;
+}
+
+table tr{
+    background-color: white;
+}
+
+tr:nth-child(even){
+    background-color: grey;
+}
+
+
+.fa-trash-can{
+    color:red;
+}
+
+.fa-check{
+    color: #4BB543;
 }
 
