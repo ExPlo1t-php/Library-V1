@@ -130,7 +130,7 @@ label{
 
 
 .list{
-    border: none;
+    border: solid #dcbe87 1px;
     background-color: #dcbe87;
     text-align: center;
     margin: auto;
