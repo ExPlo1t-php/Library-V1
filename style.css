@@ -134,6 +134,8 @@ label{
     background-color: #dcbe87;
     text-align: center;
     margin: auto;
+    border-radius: ;
+    width: 90%;
     height: 500px;
     padding: 20px;
     padding-top: 10px;
@@ -163,7 +165,7 @@ table tr{
 }
 
 tr:nth-child(even){
-    background-color: grey;
+    background-color: rgb(186, 184, 184);
 }
 
 
