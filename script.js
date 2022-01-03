@@ -15,94 +15,94 @@
  function checker(){
     var not_valid = 0;
 
-// // general check
+// general check
 
-//     for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 4; i++) {
 
-//         if(inputs[i].value == ""){
-//             not_valid++;
-//             inputs[i].style.borderColor = "red";
-//             inputs[i].nextElementSibling.style.color = "red";
-//             inputs[i].nextElementSibling.innerHTML = "please fill this field";
-//         }else{
-//             inputs[i].style.borderColor = "#4BCA81";
-//             inputs[i].nextElementSibling.style.color = "#4BCA81";
-//             inputs[i].nextElementSibling.innerHTML = "";
-//         }
-//     }
-// // titlecheck
+        if(inputs[i].value == ""){
+            not_valid++;
+            inputs[i].style.borderColor = "red";
+            inputs[i].nextElementSibling.style.color = "red";
+            inputs[i].nextElementSibling.innerHTML = "please fill this field";
+        }else{
+            inputs[i].style.borderColor = "#4BCA81";
+            inputs[i].nextElementSibling.style.color = "#4BCA81";
+            inputs[i].nextElementSibling.innerHTML = "";
+        }
+    }
+// titlecheck
 
-//     if(inTitle.value.length>max_length){
-//         not_valid++;
-//         inTitle.style.borderColor = "red";
-//         inTitle.nextElementSibling.innerHTML = "max "+ max_length;
-//         inTitle.nextElementSibling.style.color = "red";
-//     }else if(inTitle.value.length < min_length){
-//         not_valid++;
-//         inTitle.style.borderColor = "red"
-//         inTitle.nextElementSibling.innerHTML = "min "+ min_length;
-//         inTitle.nextElementSibling.style.color = "red";
-//     }
+    if(inTitle.value.length>max_length){
+        not_valid++;
+        inTitle.style.borderColor = "red";
+        inTitle.nextElementSibling.innerHTML = "max "+ max_length;
+        inTitle.nextElementSibling.style.color = "red";
+    }else if(inTitle.value.length < min_length){
+        not_valid++;
+        inTitle.style.borderColor = "red"
+        inTitle.nextElementSibling.innerHTML = "min "+ min_length;
+        inTitle.nextElementSibling.style.color = "red";
+    }
 
-// // author check
+// author check
 
-// if(inAuthor.value.length>max_length){
-//     not_valid++;
-//     inAuthor.style.borderColor = "red"
-//     inAuthor.nextElementSibling.innerHTML = "max "+max_length;
-//     inAuthor.nextElementSibling.style.color = "red";
-// }else if(inAuthor.value.length < min_length){
-//     not_valid++;
-//     inAuthor.style.borderColor = "red"
-//     inAuthor.nextElementSibling.innerHTML = "min " + parseInt(min_length + 3);
-//     inAuthor.nextElementSibling.style.color = "red";
-// }
+if(inAuthor.value.length>max_length){
+    not_valid++;
+    inAuthor.style.borderColor = "red"
+    inAuthor.nextElementSibling.innerHTML = "max "+max_length;
+    inAuthor.nextElementSibling.style.color = "red";
+}else if(inAuthor.value.length < min_length){
+    not_valid++;
+    inAuthor.style.borderColor = "red"
+    inAuthor.nextElementSibling.innerHTML = "min " + parseInt(min_length + 3);
+    inAuthor.nextElementSibling.style.color = "red";
+}
 
-// //price check
+//price check
 
-// if(isNaN(inPrice.value)){
-//     not_valid++;
-//     inPrice.style.borderColor = "red"
-//     inPrice.nextElementSibling.innerHTML = "please enter a number.";
-//     inPrice.nextElementSibling.style.color = "red";
-// }else if(inPrice.value<= 0 || inPrice.value == ""){
-//     not_valid++;
-//     inPrice.style.borderColor = "red"
-//     inPrice.nextElementSibling.innerHTML = "please enter a valid number";
-//     inPrice.nextElementSibling.style.color = "red";
-// }
+if(isNaN(inPrice.value)){
+    not_valid++;
+    inPrice.style.borderColor = "red"
+    inPrice.nextElementSibling.innerHTML = "please enter a number.";
+    inPrice.nextElementSibling.style.color = "red";
+}else if(inPrice.value<= 0 || inPrice.value == ""){
+    not_valid++;
+    inPrice.style.borderColor = "red"
+    inPrice.nextElementSibling.innerHTML = "please enter a valid number";
+    inPrice.nextElementSibling.style.color = "red";
+}
 
-// // language check
+// language check
 
-// if(inLang.value == "" || inLang.value == "sl"){
-//     not_valid++;
-//     inLang.style.borderColor = "red"
-//     inLang.nextElementSibling.innerHTML = "please choose a language.";
-//     inLang.nextElementSibling.style.color = "red";
-// }else{
-//     inLang.style.borderColor = "#4BCA81"
-//     inLang.nextElementSibling.innerHTML = "";
-//     inLang.nextElementSibling.style.color = "#4BCA81";
-// }
+if(inLang.value == "" || inLang.value == "sl"){
+    not_valid++;
+    inLang.style.borderColor = "red"
+    inLang.nextElementSibling.innerHTML = "please choose a language.";
+    inLang.nextElementSibling.style.color = "red";
+}else{
+    inLang.style.borderColor = "#4BCA81"
+    inLang.nextElementSibling.innerHTML = "";
+    inLang.nextElementSibling.style.color = "#4BCA81";
+}
 
-// //type check
-//     for (var i = 0; i < inType.length; i++) {
-//         if(inType[i].checked){
-//             checked = true;
-//             break;
-//         }else{
-//             checked = false;
-//         }
-//     }
+//type check
+    for (var i = 0; i < inType.length; i++) {
+        if(inType[i].checked){
+            checked = true;
+            break;
+        }else{
+            checked = false;
+        }
+    }
 
-//     if (checked) {
-//         document.getElementById("type_p").innerHTML = "";
-//         document.getElementById("type_p").style.color = "#4BCA81"
-//     } else {
-//         not_valid++;
-//         document.getElementById("type_p").style.color = "red";
-//         document.getElementById("type_p").innerHTML = "please choose a type";
-//     }
+    if (checked) {
+        document.getElementById("type_p").innerHTML = "";
+        document.getElementById("type_p").style.color = "#4BCA81"
+    } else {
+        not_valid++;
+        document.getElementById("type_p").style.color = "red";
+        document.getElementById("type_p").innerHTML = "please choose a type";
+    }
 
     if(not_valid==0){
         var row = table.insertRow(-1);
@@ -139,20 +139,14 @@ function remove(t){
 
 
 function edit(t){
-   let pchilds;
-   let edit = document.getElementsByClassName('fa-pen-to-square');
-   for(let i =0 ; i < edit.length;i++){
-    pchilds= edit[i].closest('.row').children;
+    parent = element.parentElement.parentElement.children;
+    for (let i = 0 ; i < parent.length -1 ;i++){
+        parent[i].setAttribute('contenteditable','true');
     }
-
-    for(let i =0 ; i < pchilds.length - 2;i++){
-        pchilds[i].setAttribute('contentEditable','true');
-    }
-    console.log(edit.length);
-
-  
-
-    pchilds[6].innerHTML=`<i onclick="confirm(this)" class="fa-solid fa-check"></i>`;
+    element.removeAttribute('onclick');
+    element.classList.remove('fa-edit');
+    element.className +=' fa-check';
+    element.setAttribute('onclick','check(this)');
 }
 
 
@@ -170,7 +164,6 @@ function confirm(){
 
     pchilds[6].innerHTML=`<i onclick="edit(this)" class="fa-regular fa-pen-to-square"></i>`;
 
-    
 }
 
 
